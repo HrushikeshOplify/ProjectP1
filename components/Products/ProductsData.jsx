@@ -1,0 +1,20 @@
+export const ProductsData = [
+    {
+       productimg:"/demo-main.jpg" 
+    },
+    {
+       productimg:"/demo-dark.jpg" 
+    },
+    {
+       productimg:"/demo-main.jpg" 
+    },
+     {
+       productimg:"/demo-main.jpg" 
+    },
+    {
+       productimg:"/demo-dark.jpg" 
+    },
+    {
+       productimg:"/demo-main.jpg" 
+    },
+]
