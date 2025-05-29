@@ -1,11 +1,11 @@
 import Image from "next/image";
 import LoginButton from "../LoginButton";
-import "./Hero.module.css";
+import "./Hero.css";
 
 
 const Hero = () => {
   return (
-    <section className="w-screen bg-indigo-100 flex justify-center items-center ">
+    <section  className="hero-section w-screen bg-indigo-100 flex justify-center items-center ">
       <div className="flex flex-col gap-3 mt-8 md:w-1/2  py-4 px-5 md:px-8">
         <div className="">
           <h2 className="text-md mb-6 md:text-lg text-gray-700"><span className="text-[#6fe1e9] text-lg font-extrabold"><ion-icon name="rocket-outline"></ion-icon></span> Kick start your project with</h2>
@@ -18,7 +18,7 @@ const Hero = () => {
         </div>
 
         <div>
-          <h2 className=" flex text-sm md:text-2xl text-gray-500 ">
+          <h2 className=" flex text-sm md:text-2xl text-gray-500 " >
             MatDash comes with light & dark color skins, well designed
             dashboards, applications and pages.
           </h2>
@@ -36,19 +36,26 @@ const Hero = () => {
       </div>
 
       <div className="hidden  md:flex md:w-1/2">
-        <div className="flex flex-col">
-          <Image
-          src="/bannerimg1.png"
-          width={300}
-          height={200}
-          alt="data"
-          />
-          {/* <Image
-          src="/bannerimg1.png"
-          width={300}
-          height={200}
-          alt="data"
-          /> */}
+        <div className="flex flex-col h-full">
+          <div className="scroller h-full">
+            <div className="banner">
+              <Image
+              src="/bannerimg1.png"
+              width={300}
+              height={200}
+              alt="data"
+              />
+            </div>
+
+            {/* <div className="banner">
+              <Image
+              src="/bannerimg1.png"
+              width={300}
+              height={200}
+              alt="data"
+              />
+            </div>  */}
+          </div>
         </div>
 
 

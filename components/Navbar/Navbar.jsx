@@ -6,18 +6,18 @@ import LoginButton from "../LoginButton"
 const Navbar = ()=>{
   let [open, setOpen] = useState(false)
     return(<>
-    <nav className="bg-white fixed w-full shadow-lg top-0 left-0 z-50  ">
-        <div className="flex justify-between  h-20 items-center px-5 md:px-20  ">
+    <nav className="bg-white fixed w-full  shadow-lg top-0 left-0 z-50  ">
+        <div className="flex justify-between max-w-[1440px]  h-20 items-center px-5 md:px-20  ">
           
           {/* Logo and Mobile Menu  */}
           <div  className="" >
             <Link href='/'>
               <Image
-              src="/mat-logo.svg"
+              src="/BooksPeLogo.svg"
               width={160}
               height={60}
               alt="Logo"
-             className="w-full h-auto"
+             className="w-full h-auto "
               
               
               />

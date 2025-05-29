@@ -4,7 +4,7 @@ import { ProductsData } from "./ProductsData";
 const Products = () => {
   return (
     <>
-      <div className="flex flex-col justify-center px-5">
+      <div className="flex flex-col justify-center px-5 sm:px-10 ">
         <div>
           <h1 className="text-3xl text-gray-600 font-semibold text-center ">
             Production Ready & Developer Friendly Bootstrap Admin Template{" "}
