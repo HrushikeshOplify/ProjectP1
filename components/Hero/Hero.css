@@ -15,3 +15,39 @@
     height: 600px;
    position: absolute; 
 } */
+
+.scroll-wrapper {
+   height: 600px;
+  overflow: hidden;
+  position: relative;
+}
+
+.scroll-content {
+  display: flex;
+  flex-direction: column;
+  animation: scroll-up 30s linear infinite;
+}
+
+@keyframes scroll-up {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+.scroll-content2{
+  display:flex;
+  flex-direction: column-reverse;
+  animation: scroll-down 30s linear infinite;
+}
+
+@keyframes scroll-down{
+0%{
+  transform: translateY(-50%);
+}
+100%{
+  transform: translateY(0%);
+}
+}

@@ -2,42 +2,33 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <section className="bg-[#635bff] w-screen h-screen flex flex-col  ">
-      <div className="w-screen flex flex-col justify-center items-center max-w-7xl my-16 sm:flex-row sm:justify-between sm:m-auto ">
-        
-        <div className="text-center sm:w-1/2 ">
+    <section className="bg-[#635bff] w-full px-5 sm:px-10 py-12">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        {/* Text Section */}
+        <div className="text-white space-y-6">
+          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-semibold">
+            Need something tailored to your business?
+            <br />
+            We build customized solutions to fit your unique operational needs.
+            Let’s connect.
+          </h1>
 
-          <div className="w-full sm:text-left px-4 ">
-            <h1 className="flex flex-wrap text-3xl sm:text-5xl font-semibold text-white ">
-              Build your app with our highly customizable Boostrap based
-              Dashboard
-            </h1>
-          </div>
-
-          <div className="mt-4 sm:flex sm:text-left">
-
-            <div className="px-5">
-              <button className="bg-white border border-white text-[#635bff] w-full sm:w-fit sm:px-5 sm:py-2 rounded-md mt-3 p-2">
-                Login
-              </button>
-            </div>
-
-            <div className="px-5">
-              <button className="bg-[#635bff] border border-white text-white w-full sm:w-fit sm:px-5 sm:py-2  mt-3 rounded-md p-2">
-                Register
-              </button>
-            </div>
-
-          </div>
-
+          <button
+            className="bg-white text-[#635bff] font-medium px-6 py-3 rounded-md border
+           border-white hover:bg-gray-200 transition"
+          >
+            Request Demo
+          </button>
         </div>
 
-        <div className="mt-5 sm:w-1/2 sm:text-center" >
+        {/* Image Section */}
+        <div className="flex justify-center md:justify-end">
           <Image
+            className=""
             src="/checking-email.png"
-            alt="Emial-checking"
-            height={300}
+            alt="Email checking illustration"
             width={300}
+            height={300} 
           />
         </div>
       </div>
